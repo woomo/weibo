@@ -4,7 +4,7 @@
     <title>
         @yield('title','WeiBo App') -   Laravel 入门教程
     </title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{mix('/css/app.css')}}">
 </head>
 <body>
   <nav class="navbar navbar-exppand-lg navbar-dark bg-dark">
