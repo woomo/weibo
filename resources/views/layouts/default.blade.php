@@ -15,12 +15,10 @@
     <div class="container">
       <div class="offset-md-1 col-md-10">
         @yield('content')
-        @include('layouts._footer')
+
       </div>
     </div>
-  </nav>
-  <div class="container">
-       @yield("content")
-  </div>
+
+  @include('layouts._footer')
 </body>
 </html>
