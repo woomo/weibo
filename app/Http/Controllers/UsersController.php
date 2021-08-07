@@ -27,6 +27,6 @@ class UsersController extends Controller
             'email'=>'required|email|unique:users|max:50',
             'password'=>'required|confirmed|min:6'
         ]);
-        
+
     }
 }
