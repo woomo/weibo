@@ -1,4 +1,4 @@
-@extends('layouts.default)
+@extends('layouts.default')
 @section('title','登录')
 
 @section('content')
@@ -9,7 +9,7 @@
       </div>
 
       <div class="card-body">
-        @include('shared.errors')
+        @include('shared._errors')
 
         <form method="POST" action="{{route('login')}}">
           {{csrf_field()}}
@@ -23,7 +23,7 @@
             <label for="password">密码：</label>
             <input type="password" name="password" class="form-control" value="{{old('password')}}">
           </div>
-          <button type="submit" class="bth bth-primary">登录</button>
+          <button type="submit" class="btn btn-primary">登录</button>
 
         </form>
         <hr>
@@ -31,4 +31,4 @@
       </div>
     </div>
   </div>
-  @stop
+@stop

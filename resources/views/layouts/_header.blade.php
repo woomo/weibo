@@ -3,7 +3,7 @@
     <a class="navbar-brand" href={{route('home')}}>Weibo App</a>
     <u1 class="navbar-nav justify-content-end">
       <li class="nav-item"><a class="nav-link" href="{{route('help')}}">帮助</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">登录</a></li>
+      <li class="nav-item"><a class="nav-link" href="{{route('login')}}">登录</a></li>
     </u1>
   </div>
 </nav>
