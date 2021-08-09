@@ -33,7 +33,8 @@ class SessionsController extends Controller
     public function destroy(Request $request)
     {
         \auth()->logout();
-        return redirect()->route('home');
+        session()->flash('success','你已成功退出！');
+        return redirect()->route('login');
     }
 
 }
